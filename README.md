@@ -1,39 +1,43 @@
-## Welcome to GitHub Pages
+# SoleRun
+Lightweight In-Process Native Code Execution Engine
 
-你好。。。。。。
+## Project Introduction
+SoleRun is a lightweight, high-performance in-process native code execution engine.
+It executes pre-compiled native code from a controller process inside the target process,
+without any virtual machine or parser inside. It has extremely small memory usage
+and runs at near-native speed.
 
-You can use the [editor on GitHub](https://github.com/sule1226/test/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+It is designed for Linux system-level development and low-level software development,
+to help developers achieve efficient in-process remote execution, lightweight memory access,
+and high-concurrency runtime tasks.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Core Features
+- Ultra-lightweight: No extra VM or parser
+- Near-native execution speed
+- Run code inside the target process
+- Simple and dedicated design
+- Works well on Linux
 
-### Markdown
+## Tech Stack
+- Languages: C/C++, x86-64 Assembly
+- System: Linux process/thread model, system calls
+- Network: TCP/IP, epoll, Reactor pattern
+- Tools: GDB, Valgrind, Git, Docker
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Core Goals
+1. Execute pre-compiled native code from a controller process
+2. Keep the target process footprint very small
+3. Support direct memory access and near-native performance
+4. Run stably and efficiently in high-concurrency scenarios
 
-```markdown
-Syntax highlighted code block
+## Usage Scenarios
+- Dynamic code injection for Linux system programs
+- Low-latency in-process task execution
+- Lightweight extension loading for high-performance services
+- System debugging and native code runtime testing
 
-# Header 1
-## Header 2
-### Header 3
+## Project Status
+Under active development.
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sule1226/test/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## License
+MIT License
